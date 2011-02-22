@@ -1,0 +1,13 @@
+README.rdoc
+Rakefile
+assets.yml
+grouper.gemspec
+grouper.yml
+lib/assets/asset.rb
+lib/assets/asset_db.rb
+lib/assets/asset_set.rb
+lib/exceptions/exceptions.rb
+lib/grouper.rb
+lib/helpers/helpers.rb
+lib/upload/s3.rb
+Manifest
