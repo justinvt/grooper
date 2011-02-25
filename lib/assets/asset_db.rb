@@ -70,7 +70,7 @@ module Grooper
       sets   = values.nil? ? [] : ( values[:sets].to_a  )
       Grooper.log.debug "#{set_name} consists of #{files.empty? ? "no files" : "files " + files.inspect} and of #{sets.empty? ? "no file sets" : "file sets " + sets.inspect}"
       @loaded_sets = [ @loaded_sets, sets].flatten.uniq
-      to_load = [ files, sets.map{|s| gather_files(s) } ].flatten.to_a.uniq
+      to_load = [ sets.map{|s| gather_files(s) } , files].flatten.to_a.uniq
       return to_load
     end
 
