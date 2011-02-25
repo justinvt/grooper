@@ -1,0 +1,25 @@
+--- 
+backbone:
+  :context:
+    :layouts:
+    - content
+  :files:
+  - https://github.com/douglascrockford/JSON-js/blob/master/json2.js
+  - http://documentcloud.github.com/underscore/underscore.js
+  - http://documentcloud.github.com/backbone/backbone.js
+
+jquery:
+  :context:
+    :selectors:
+  :files: 
+  - http://code.jquery.com/jquery-1.5.min.js
+
+widgets:
+  :context:
+    :selectors:
+    - ".date_picker"
+  :sets:
+  - jquery
+  - backbone
+  :files:
+  - http://fuckyou.js
